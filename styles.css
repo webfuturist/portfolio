@@ -232,7 +232,7 @@ footer {
     text-align: center;
 }
 
-/* Animations */
+/* Animations CSS */
 @keyframes fadeInDown {
     from {
         opacity: 0;
