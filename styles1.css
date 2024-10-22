@@ -245,6 +245,10 @@ footer {
     margin-top: 3rem;
 }
 
+.margin-top-7rem {
+    margin-top: 7rem;
+}
+
 .content-center {
     display: flex;
     justify-content: center;
