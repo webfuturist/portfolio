@@ -232,6 +232,46 @@ footer {
     text-align: center;
 }
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid .grid-col-2 {
+    width: 100%
+}
+
+.margin-top-3rem {
+    margin-top: 3rem;
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgd-image {
+    flex: 0 0 auto;
+    width: 77%;
+    margin-top: 4rem;
+    margin: auto;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    animation: upDown 3s ease-in-out infinite; 
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    /* Styles specific to laptop screens */
+    .grid .grid-col-2 {
+        width: 50%;
+    }
+}
+
 /* Animations CSS */
 @keyframes fadeInDown {
     from {
@@ -243,3 +283,15 @@ footer {
         transform: translateY(0);
     }
 }
+
+@keyframes upDown {
+    0% {
+      transform: translateY(0);  /* Start position */
+    }
+    50% {
+      transform: translateY(-10px);  /* Moves the image up by 10px */
+    }
+    100% {
+      transform: translateY(0);  /* Returns to the original position */
+    }
+  }

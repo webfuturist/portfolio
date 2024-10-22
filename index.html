@@ -4,261 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebFuturist | Modern Web Development</title>
-<!--     <link rel="stylesheet" href="/styles.css"> -->
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-}
-
-/* Header Section */
-header {
-    background: linear-gradient(135deg, #009688, #004d40);
-    color: #fff;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-nav {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-    animation: fadeInDown 1.5s ease-out;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    background-color: #ff5722;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e64a19;
-}
-
-/* About Section */
-#about {
-    padding: 60px 20px;
-    background-color: #f4f4f9;
-    text-align: center;
-}
-
-#about .container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-#about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 18px;
-    color: #333;
-}
-
-/* What We Do Section */
-#what-we-do {
-    padding: 60px 20px;
-    background-color: #009688;
-    color: #fff;
-    text-align: center;
-}
-
-.services {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.service-card {
-    background-color: #ffffff;
-    color: #333;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.icon {
-    font-size: 48px;
-    color: #009688;
-}
-
-/* Portfolio Section */
-#portfolio {
-    padding: 60px 20px;
-    background-color: #f4f4f9;
-}
-
-.portfolio-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.portfolio-item {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.portfolio-item:hover img {
-    transform: scale(1.1);
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.portfolio-item:hover .overlay {
-    opacity: 1;
-}
-
-/* Contact Section */
-#contact {
-    padding: 60px 20px;
-    background-color: #009688;
-    color: #fff;
-    text-align: center;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact input, #contact textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-#contact button {
-    padding: 12px 24px;
-    background-color: #ff5722;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#contact button:hover {
-    background-color: #e64a19;
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
-/* Animations CSS */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-    </style>
+    <link rel="stylesheet" href="/styles1.css">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
         <nav>
-            <div class="logo">WebFuturist</div>
+            <div class="logo">
+                <span><img src="/images/logo.png" height="100px" width="200px" alt="WebFuturist"></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#what-we-do">What We Do</a></li>
@@ -266,10 +21,19 @@ footer {
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Innovating the Web, Crafting the Future</h1>
-            <p>10+ Years of Experience in Modern Web Development</p>
-            <a href="#what-we-do" class="btn">Our Work</a>
+        <div class="hero grid">
+            <div class="grid-col-2 content-center">
+                <div>
+                    <h1>Innovating the Web, Crafting the Future</h1>
+                    <p>10+ Years of Experience in Modern Web Development</p>
+                    <a href="#portfolio" class="btn">Our Work</a>
+                </div>
+            </div>
+            <div class="grid-col-2 margin-top-3rem">
+                <div class="backgd-image">
+                    <img class="hero-image" src="/images/backgd.png" alt="background">
+                </div>
+            </div>
         </div>
     </header>
 
@@ -306,35 +70,51 @@ footer {
     </section>
 
     <!-- Portfolio Section -->
-<!--     <section id="portfolio">
+    <section id="portfolio">
         <div class="container">
             <h2>Our Portfolio</h2>
             <p>Here’s a glimpse of some of the innovative projects we’ve worked on:</p>
+            <br/>
             <div class="portfolio-gallery">
                 <div class="portfolio-item">
-                    <img src="project1.jpg" alt="Project 1">
+                    <img src="/images/1.png" alt="Project 1">
                     <div class="overlay">
-                        <h3>Project One</h3>
-                        <p>A responsive web app built using React.</p>
+                        <h3>Baarbo</h3>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="project2.jpg" alt="Project 2">
+                    <img src="/images/2.png" alt="Project 2">
                     <div class="overlay">
-                        <h3>Project Two</h3>
-                        <p>A sleek e-commerce platform developed with Angular.</p>
+                        <h3>Little Soccer Academy</h3>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="project3.jpg" alt="Project 3">
+                    <img src="/images/3.png" alt="Project 3">
                     <div class="overlay">
-                        <h3>Project Three</h3>
-                        <p>A highly optimized, mobile-friendly website using Bootstrap.</p>
+                        <h3>Akta Prime</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/images/4.png" alt="Project 4">
+                    <div class="overlay">
+                        <h3>Web Worldus</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/images/5.png" alt="Project 5">
+                    <div class="overlay">
+                        <h3>Oyefa</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/images/6.png" alt="Project 6">
+                    <div class="overlay">
+                        <h3>Way Trade</h3>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
